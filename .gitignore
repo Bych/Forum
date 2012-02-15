@@ -1,0 +1,6 @@
+
+*.suo
+/Forum/obj
+/Forum/bin
+/MongoDB.Web/obj
+/MongoDB.Web/bin

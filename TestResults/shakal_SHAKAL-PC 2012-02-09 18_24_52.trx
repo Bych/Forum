@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="eabd6267-dbd6-43d7-a7d1-f603f7122da5" name="shakal@SHAKAL-PC 2012-02-09 18:24:52" runUser="shakal-PC\shakal" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="9aefd210-ec6e-49ed-9ad9-0005df0883b1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="shakal_SHAKAL-PC 2012-02-09 18_24_52">
+      <DeploymentItem filename="E:\Programming\ASP_NET_MVC\Forum\Forum\Tests\MoqNet40\Moq.dll" />
+      <DeploymentItem filename="E:\Programming\ASP_NET_MVC\Forum\Forum\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll" />
+      <DeploymentItem filename="E:\Programming\ASP_NET_MVC\Forum\Forum\Forum\bin\Forum.dll" />
+      <DeploymentItem filename="E:\Programming\ASP_NET_MVC\Forum\Forum\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll" />
+      <DeploymentItem filename="E:\Programming\ASP_NET_MVC\Forum\Forum\packages\StructureMap\StructureMap.dll" />
+      <DeploymentItem filename="E:\Programming\ASP_NET_MVC\Forum\Forum\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-09T18:24:52.6144238+03:00" queuing="2012-02-09T18:24:54.5625352+03:00" start="2012-02-09T18:24:54.7435456+03:00" finish="2012-02-09T18:25:18.0658796+03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ThemeCreateTest" storage="e:\programming\asp_net_mvc\forum\forum\tests\bin\debug\tests.dll" id="eb83c796-88f3-8a65-0285-494056e0c9f6">
+      <Execution id="4b807958-deba-41dc-9dbf-d201dbf65288" />
+      <TestMethod codeBase="E:/Programming/ASP_NET_MVC/Forum/Forum/Tests/bin/Debug/Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.ForumTest, Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThemeCreateTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="eb83c796-88f3-8a65-0285-494056e0c9f6" executionId="4b807958-deba-41dc-9dbf-d201dbf65288" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4b807958-deba-41dc-9dbf-d201dbf65288" testId="eb83c796-88f3-8a65-0285-494056e0c9f6" testName="ThemeCreateTest" computerName="SHAKAL-PC" duration="00:00:21.4680675" startTime="2012-02-09T18:24:54.9165555+03:00" endTime="2012-02-09T18:25:17.9838749+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b807958-deba-41dc-9dbf-d201dbf65288">
+    </UnitTestResult>
+  </Results>
+</TestRun>

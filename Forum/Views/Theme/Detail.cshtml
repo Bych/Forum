@@ -1,0 +1,80 @@
+﻿@model Forum.Models.PostListModel
+           
+@using MvcPaging;
+           
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("form[action$=AddPost]").live("submit", function () {
+            $.post(
+                    $(this).attr("action"),
+                    $(this).serialize(),
+                    function (response) {
+                        if (response.result == 1) {
+                            // show animation only on the last page
+                            if ('@Model.Posts.IsLastPage' == 'True') {
+                                $("#post-list").append(response.postHtml);
+                                $("#post-list>tr:last")
+                                .find('td')
+                                .wrapInner('<div style="display: none;" />')
+                                .parent()
+                                .find('td > div')
+                                .slideDown("fast", function () { var $set = $(this); $set.replaceWith($set.contents()); });
+                            }
+                            $("#add-post").html(response.addHtml);
+                            $("#Details").val("");
+                        }
+                        else {
+                            $("#add-post").html(response.addHtml);
+                        }
+
+                        tinyMCE_GZ.init({
+                            themes: 'simple',
+                            disk_cache: true,
+                            languages: "ru",
+                            debug: false
+                        });
+                        tinyMCE.init({
+                            mode: "textareas",
+                            theme: "simple",
+                            language: "ru"
+                        });
+                    });
+            return false;
+        });
+    });
+
+    function deletePost(themeId, postId, button) {
+        var curPost = button.parent().parent();
+        $.post(
+            '@Url.Action("DeletePost")',
+            { themeId: themeId, postId: postId },
+            function () {
+                curPost.remove();
+            }
+        );
+        }
+</script>
+
+@{
+    ViewBag.Title = "Detail";
+}
+<h2>@Model.Posts[0].ThemeTitle</h2>
+<div class="content">
+    @Html.Partial("PostList", @Model)
+</div>
+@{
+    if (ViewBag.IsAuthenticated)
+    {
+        <hr />
+        <div id="add-post">
+            @Html.Partial("AddPost", new Forum.Models.PostModel { ThemeId = Model.Posts[0].ThemeId.ToString(), })
+        </div>
+        <hr />
+    }
+}
+
+<div class="pager">
+	@Html.Pager(Model.Posts.PageSize, Model.Posts.PageNumber, Model.Posts.TotalItemCount)
+</div>
+
+

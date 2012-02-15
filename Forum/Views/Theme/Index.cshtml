@@ -1,0 +1,69 @@
+﻿@model Forum.Models.ThemeListModel
+           
+<script type="text/javascript">
+    function deleteTheme(themeId, button) {
+        var curTheme = button.parent().parent();
+        $.post(
+            '@Url.Action("DeleteTheme")',
+            { themeId: themeId },
+            function () {
+                curTheme.remove();
+            }
+        );
+    }
+</script>
+
+@using MvcPaging;
+@{
+    ViewBag.Title = "Main";
+}
+@{
+    
+    if (ViewBag.IsAuthenticated)
+    {
+    <p>
+        @Html.ActionLink("Add theme", "Create", "Theme", null, new { @class = "btnActionLink", @style = "text-decoration:none" })
+    </p>
+    }
+}
+<div class="content">
+    <table>
+        <tr>
+            <th>
+                Themes
+            </th>
+            <th>
+                Posts
+            </th>
+            <th>
+                Author
+            </th>
+            <th>
+                Last post
+            </th>
+        </tr>
+        @foreach (var item in Model.Themes)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(item.Title, "Detail", new { id = item.Url })
+                </td>
+                <td>
+                    @item.TotalPosts
+                </td>
+                <td>
+                    @item.Author
+                </td>
+                <td>
+                    @item.LastPostInfo
+                </td>
+                <td class="theme-delete">
+                    <input type="button" class="deleteButton" value="Delete" onclick="deleteTheme('@item.ThemeId', $(this)); return false;" />
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<div class="pager">
+    @Html.Pager(Model.Themes.PageSize, Model.Themes.PageNumber, Model.Themes.TotalItemCount)
+</div>

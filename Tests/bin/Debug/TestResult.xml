@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\Programming\ASP_NET_MVC\Forum\Forum\Tests\bin\Debug\Tests.dll" total="0" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-02-09" time="18:13:35">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5448" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="E:\Programming\ASP_NET_MVC\Forum\Forum\packages\NUnit.2.5.10.11092\tools" machine-name="SHAKAL-PC" user="shakal" user-domain="shakal-PC" />
+  <culture-info current-culture="ru-RU" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="E:\Programming\ASP_NET_MVC\Forum\Forum\Tests\bin\Debug\Tests.dll" executed="True" result="Inconclusive" success="False" time="0.029" asserts="0" />
+</test-results>

@@ -1,0 +1,298 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="8BCF94A6-7D7B-41E6-A6FC-428B96965D80/f:Bootstrapper.cs" caret="490" fromTop="13" />
+      <File id="8BCF94A6-7D7B-41E6-A6FC-428B96965D80/f:MongoHelperTest.cs" caret="454" fromTop="11" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Documents/f:ThemeDocument.cs" caret="392" fromTop="15" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Models/f:ThemeListItemModel.cs" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/f:Web.config" caret="300" fromTop="11" />
+      <File id="AAF30968-1118-4937-B392-E9863EA8D76D/f:PagingExtensions.cs" caret="3078" fromTop="17" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:IThemeService.cs" caret="341" fromTop="15" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:ThemeService.cs" caret="1819" fromTop="24" />
+      <File id="8BCF94A6-7D7B-41E6-A6FC-428B96965D80/f:ForumTest.cs" caret="1295" fromTop="10" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:MongoHelper.cs" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:IMongoHelper.cs" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:AccountController.cs" caret="348" fromTop="17" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Documents/f:ResumeDocument.cs" caret="414" fromTop="17" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Theme/f:About.cshtml" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:PostService.cs" caret="1065" fromTop="11" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:IResumeService.cs" caret="426" fromTop="18" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Documents/f:PostDocument.cs" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Theme/f:PostList.cshtml" caret="581" fromTop="22" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:StringHelper.cs" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Theme/f:Index.cshtml" caret="479" fromTop="21" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Theme/f:PostListItem.cshtml" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ThemeController.cs" caret="366" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:FileUploadHelper.cs" caret="345" fromTop="13" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Theme/f:Detail.cshtml" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:Upload.cshtml" caret="96" fromTop="7" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Content/f:Site.css" caret="499" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="497" fromTop="22" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Shared/f:_Layout.cshtml" caret="862" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Content/d:CSS/d:squarely/f:default.css" caret="413" fromTop="19" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="1031" fromTop="23" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:FileUploadHelper.cs" caret="672" fromTop="21" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="2226" fromTop="28" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1328" fromTop="16" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1351" fromTop="15" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="2213" fromTop="34" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="37" fromTop="10" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="2230" fromTop="24" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:FileUploadHelper.cs" caret="295" fromTop="13" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:FileUploadHelper.cs" caret="666" fromTop="22" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1328" fromTop="29" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="948" fromTop="21" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1052" fromTop="24" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1291" fromTop="29" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="469" fromTop="13" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="37" fromTop="10" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="37" fromTop="20" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="1727" fromTop="30" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="1727" fromTop="40" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="1727" fromTop="26" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="1729" fromTop="35" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Shared/f:_Layout.cshtml" caret="96" fromTop="4" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Shared/f:_Layout.cshtml" caret="862" fromTop="13" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="992" fromTop="6" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="992" fromTop="13" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="992" fromTop="6" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="698" fromTop="11" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="30" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="538" fromTop="7" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="960" fromTop="17" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="1034" fromTop="23" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="var" priority="319" />
+      <Item value="new" priority="416" />
+      <Item value="int" priority="92" />
+      <Item value="public" priority="287" />
+      <Item value="ForumTest`0" priority="31" />
+      <Item value="using" priority="61" />
+      <Item value="Moq" priority="30" />
+      <Item value="Mock`0" priority="28" />
+      <Item value="mock" priority="63" />
+      <Item value="IThemeService`0" priority="127" />
+      <Item value="themeService" priority="191" />
+      <Item value="List" priority="92" />
+      <Item value="List&lt;ThemeDocument&gt;" priority="28" />
+      <Item value="ThemeDocument" priority="28" />
+      <Item value="Author" priority="31" />
+      <Item value="Date" priority="65" />
+      <Item value="DateTime`0" priority="64" />
+      <Item value="Details" priority="97" />
+      <Item value="LastPostInfo" priority="32" />
+      <Item value="String`0" priority="129" />
+      <Item value="this" priority="63" />
+      <Item value="IList" priority="28" />
+      <Item value="PostDocument`0" priority="95" />
+      <Item value="post" priority="32" />
+      <Item value="List&lt;PostDocument&gt;" priority="57" />
+      <Item value="postDocuments" priority="64" />
+      <Item value="PostDocument" priority="28" />
+      <Item value="Posts" priority="32" />
+      <Item value="ThemeId" priority="32" />
+      <Item value="Title" priority="65" />
+      <Item value="TotalPosts" priority="32" />
+      <Item value="Url" priority="32" />
+      <Item value="themeDocument" priority="192" />
+      <Item value="ThemeDocument`0" priority="194" />
+      <Item value="It`0" priority="159" />
+      <Item value="themeId" priority="31" />
+      <Item value="ObjectId`0" priority="63" />
+      <Item value="themeDocuments" priority="97" />
+      <Item value="pageIndex" priority="31" />
+      <Item value="pageSize" priority="31" />
+      <Item value="private" priority="95" />
+      <Item value="AfterAssemblyInitializeEventArgs`0" priority="31" />
+      <Item value="void" priority="223" />
+      <Item value="TestInitialize" priority="31" />
+      <Item value="ThemeModel" priority="28" />
+      <Item value="theme" priority="65" />
+      <Item value="ThemeController" priority="28" />
+      <Item value="return" priority="191" />
+      <Item value="IContainer`0" priority="30" />
+      <Item value="Bootstrapper`0" priority="30" />
+      <Item value="container" priority="30" />
+      <Item value="IPostService`0" priority="30" />
+      <Item value="ConnectionMode`0" priority="31" />
+      <Item value="MongoDatabaseSettings`0" priority="31" />
+      <Item value="mongoDatabaseSettings" priority="32" />
+      <Item value="MongoDatabaseSettings" priority="28" />
+      <Item value="server" priority="31" />
+      <Item value="MongoDatabase`0" priority="63" />
+      <Item value="IEnumerable" priority="95" />
+      <Item value="string" priority="255" />
+      <Item value="connectionStringBuilder" priority="32" />
+      <Item value="MongoConnectionStringBuilder" priority="28" />
+      <Item value="IMongoHelper" priority="95" />
+      <Item value="mongoHelper" priority="32" />
+      <Item value="x" priority="31" />
+      <Item value="MongoHelper" priority="30" />
+      <Item value="IMongoHelper`0" priority="31" />
+      <Item value="config" priority="31" />
+      <Item value="MongoHelperTest`0" priority="30" />
+      <Item value="model" priority="63" />
+      <Item value="Assert`0" priority="95" />
+      <Item value="_themeService" priority="64" />
+      <Item value="null" priority="63" />
+      <Item value="const" priority="63" />
+      <Item value="AnonymousName" priority="31" />
+      <Item value="TestMethod" priority="31" />
+      <Item value="default" priority="31" />
+      <Item value="mockThemeService" priority="95" />
+      <Item value="PostListItemModel`0" priority="31" />
+      <Item value="#region" priority="31" />
+      <Item value="#endregion" priority="31" />
+      <Item value="GetThemeService`0" priority="32" />
+      <Item value="i" priority="31" />
+      <Item value="System" priority="30" />
+      <Item value="Linq" priority="26" />
+      <Item value="ResumeDocument`0" priority="31" />
+      <Item value="Html" priority="59" />
+      <Item value="Upload`0" priority="31" />
+      <Item value="if" priority="31" />
+      <Item value="file" priority="63" />
+      <Item value="else" priority="31" />
+      <Item value="input" priority="29" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Mock`1">
+      <Item value="Setup`0" priority="134" />
+      <Item value="Object" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Forum.Services.IThemeService">
+      <Item value="AddTheme`0" priority="26" />
+      <Item value="DeleteTheme`0" priority="26" />
+      <Item value="GetThemes`0" priority="53" />
+      <Item value="GetThemesCount`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="27" />
+      <Item value="Empty" priority="81" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MongoDB.Bson.ObjectId">
+      <Item value="GenerateNewId`0" priority="55" />
+      <Item value="Empty" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Count" priority="82" />
+      <Item value="Add`0" priority="26" />
+      <Item value="Remove`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Moq.It">
+      <Item value="IsAny`1" priority="107" />
+      <Item value="Is`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`1">
+      <Item value="Callback`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
+      <Item value="Returns`0" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Tests.Bootstrapper">
+      <Item value="Bootstrap`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.IContainer">
+      <Item value="GetInstance`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MongoDB.Driver.MongoServer">
+      <Item value="GetDatabaseNames`0" priority="26" />
+      <Item value="GetDatabase`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MongoDB.Driver.MongoConnectionStringBuilder">
+      <Item value="ConnectionString" priority="26" />
+      <Item value="DatabaseName" priority="53" />
+      <Item value="TryGetValue`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Forum.Helpers.MongoHelper`1">
+      <Item value="GetCollection`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Forum.Helpers.IMongoHelper`1">
+      <Item value="Init`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.ConfigurationExpression">
+      <Item value="For`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Configuration.DSL.Expressions.CreatePluginFamilyExpression`1">
+      <Item value="Use`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Forum.Controllers.ThemeController">
+      <Item value="Create`0" priority="26" />
+      <Item value="Index`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="AreEqual`1" priority="80" />
+      <Item value="Equals`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Forum.Documents.ThemeDocument">
+      <Item value="Author" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Forum.Models.ThemeListModel">
+      <Item value="Themes" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Forum.Models.ThemeListItemModel">
+      <Item value="Author" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="RazorTransitionCompletionContext">
+      <Item value="Html" priority="15" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="RenderPartial`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="HtmlCodeCompletionContext">
+      <Item value="br" priority="6" />
+      <Item value="span" priority="5" />
+      <Item value="style" priority="5" />
+      <Item value="div" priority="5" />
+      <Item value="_Layout.cshtml" priority="5" />
+      <Item value="ButtonBrowse" priority="6" />
+      <Item value="name" priority="11" />
+      <Item value="value" priority="6" />
+      <Item value="input" priority="7" />
+      <Item value="tr" priority="5" />
+      <Item value="td" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="CssCodeCompletionContext">
+      <Item value="margin" priority="5" />
+      <Item value="padding" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpPostedFileBase">
+      <Item value="HasFile`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContext">
+      <Item value="$" priority="29" />
+      <Item value="function" priority="10" />
+      <Item value="ajaxFileUpload" priority="10" />
+      <Item value="var" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContextQualified">
+      <Item value="ready" priority="8" />
+      <Item value="submit" priority="8" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

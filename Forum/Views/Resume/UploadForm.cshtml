@@ -1,0 +1,114 @@
+﻿<script type="text/javascript">
+    $(function() {
+        var ajaxUploadForm = "form[action$=AjaxUpload]";
+        $(ajaxUploadForm).ajaxForm({
+                iframe: true,  // the form should always target the server response to an iframe
+                dataType: "json", // the server response will be evaluted and passed to the 'success' callback, if specified
+                beforeSubmit: function() {
+                    $(ajaxUploadForm).block({
+                            message: "Please, wait...",
+                            css: {
+                                height: '20px',
+                                border: 'none',
+                                padding: '7px',
+                                backgroundColor: '#000',
+                                '-webkit-border-radius': '5px',
+                                '-moz-border-radius': '5x',
+                                opacity: .5,
+                                color: '#fff'
+                            }
+                        });
+                },
+                success: function(response) {
+                    $(ajaxUploadForm).unblock();
+                    $(ajaxUploadForm).html(response.uploadFormHtml);
+                    $.blockUI({
+                            message: response.screenMessage,
+                            fadeIn: 700,
+                            fadeOut: 700,
+                            timeout: 1500,
+                            showOverlay: false,
+                            centerY: true,
+                            centerX: true,
+                            css: {
+                                height: '20px',
+                                border: 'none',
+                                padding: '7px',
+                                backgroundColor: '#000',
+                                '-webkit-border-radius': '5px',
+                                '-moz-border-radius': '5x',
+                                opacity: .5,
+                                color: '#fff'
+                            }
+                        });
+                }
+            });
+    });
+
+    $(document).ready(function () {
+        
+        var uploader = new qq.FileUploader({
+            // pass the dom node (ex. $(selector)[0] for jQuery users)
+            element: $("#file-uploader"),
+            // path to server-side upload script
+            action: '/Resume/AjaxUpload'
+        });
+    });
+</script>
+
+@model Forum.Models.ResumeModel
+           
+<div id="file-uploader">       
+    <noscript>          
+        <!-- Put a simple form for upload here -->
+        @{
+            using (Html.BeginForm("AjaxUpload", "Resume", FormMethod.Post, new { enctype = "multipart/form-data"}))
+            {
+                <table>
+                    <tr>
+                        <td>
+                            Please select a file (10MB max size) and click Upload button
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="file" name="ResumeFile" />
+                            @Html.ValidationMessageFor(x => x.ResumeFile)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="AjaxUploadButton" type="submit" value="Upload" />
+                        </td>
+                    </tr>
+                </table>
+            }
+        }
+    </noscript>         
+</div>
+
+
+
+@*@{
+    using (Html.BeginForm("AjaxUpload", "Resume", FormMethod.Post, new { enctype = "multipart/form-data"}))
+    {
+        <table>
+            <tr>
+                <td>
+                    Please select a file (10MB max size) and click Upload button
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="file" name="ResumeFile" />
+                    @Html.ValidationMessageFor(x => x.ResumeFile)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="AjaxUploadButton" type="submit" value="Upload" />
+                </td>
+            </tr>
+        </table>
+    }
+}*@

@@ -1,0 +1,16 @@
+﻿@model Forum.Models.PostModel
+@using (Html.BeginForm("AddPost", "Theme", FormMethod.Post))
+{
+    <input name="themeId" type="hidden" value="@Model.ThemeId" />
+    @Html.TextAreaFor(p => p.Details)
+    <span style="color: white; padding: 5px; font-weight:bold">@Html.ValidationMessageFor(p => p.Details)</span>
+    <br />
+    <input id="addPostSubmit" type="submit" value="Add post" />
+    
+    <script type="text/javascript">
+        $("#addPostSubmit").click(function () {
+            var content = tinyMCE.activeEditor.getContent(); // get the content
+            $("#Details").val(content); // put it in the textarea
+        });
+    </script>
+}

@@ -1,0 +1,30 @@
+﻿@model Forum.Models.PostListModel
+
+<table class="postTable" cellspacing="0">
+    <tbody id="post-list">
+    <tr>
+        <th class="post-author">
+            Author
+        </th>
+        <th class="post-details">
+            Details
+        </th>
+        <th class="post-date">
+            Date
+        </th>
+        @{
+            if (ViewBag.IsAuthenticated)
+            {
+                <th class="post-delete">
+                </th>
+            }
+        }
+    </tr>
+    @{
+        foreach (var item in Model.Posts)
+        {
+            @Html.Partial("PostListItem", item)
+        }
+    }
+    </tbody>
+</table>

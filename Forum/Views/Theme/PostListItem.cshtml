@@ -1,0 +1,22 @@
+﻿@model Forum.Models.PostListItemModel
+
+
+<tr>
+    <td class="post-author">
+        @Html.DisplayFor(x => x.Author)
+    </td>
+    <td class="post-details">
+        @Html.Raw(Model.Details)
+    </td>
+    <td class="post-date">
+        @Html.DisplayFor(x => x.Date)
+    </td>
+    @{
+        if (ViewBag.IsAuthenticated)
+        {
+            <td class="post-delete">
+                <input type="button" class="deleteButton" value="Delete" onclick="deletePost('@Model.ThemeId', '@Model.PostId', $(this)); return false;" />
+            </td>
+        }
+    }
+</tr>
