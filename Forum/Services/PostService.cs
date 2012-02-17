@@ -12,31 +12,31 @@ namespace Forum.Services
 {
     public class PostService : IPostService
     {
-        private MongoCollection<ThemeDocument> themes;
+        private readonly MongoCollection<ThemeDocument> _themes;
 
         public PostService(IMongoHelper mongoHelper)
         {
-            themes = mongoHelper.GetCollection<ThemeDocument>("theme");
+            _themes = mongoHelper.GetCollection<ThemeDocument>("theme");
         }
 
         public void AddPost(ObjectId themeId, PostDocument post)
         {
             var lastPostInfo = String.Format("{0}, {1}", post.Date, post.Author);
-            themes.Update(Query.EQ("_id", themeId), Update.PushWrapped("Posts", post).Inc("TotalPosts", 1).Set("LastPostInfo", lastPostInfo));
+            _themes.Update(Query.EQ("_id", themeId), Update.PushWrapped("Posts", post).Inc("TotalPosts", 1).Set("LastPostInfo", lastPostInfo));
         }
 
         public int GetPostsCount(ObjectId themeId)
         {
-            return themes.FindOne(Query.EQ("_id", themeId)).Posts.Count;
+            return _themes.FindOne(Query.EQ("_id", themeId)).Posts.Count;
         }
 
         public IEnumerable<PostDocument> GetPosts(ObjectId themeId, int pageIndex, int pageSize)
         {
             //TODO: ask Bugi how to select Posts as mongoCursor to apply SetSkip&SetLimit methods
-            IEnumerable<PostDocument> test = themes.FindOne(Query.EQ("_id", themeId)).Posts.OrderBy(p => p.Date).Skip(pageIndex * pageSize).Take(pageSize);
+            IEnumerable<PostDocument> test = _themes.FindOne(Query.EQ("_id", themeId)).Posts.OrderBy(p => p.Date).Skip(pageIndex * pageSize).Take(pageSize);
             int selected = test.Count();
 
-            return themes.FindOne(Query.EQ("_id", themeId)).Posts
+            return _themes.FindOne(Query.EQ("_id", themeId)).Posts
                 .OrderBy(p => p.Date)
                 .Skip(pageIndex * pageSize)
                 .Take(pageSize);
@@ -44,12 +44,12 @@ namespace Forum.Services
 
         public void DeletePost(ObjectId themeId, ObjectId postId)
         {
-            themes.Update(Query.EQ("_id", themeId), Update.Pull("Posts", Query.EQ("_id", postId)).Inc("TotalPosts", -1));
+            _themes.Update(Query.EQ("_id", themeId), Update.Pull("Posts", Query.EQ("_id", postId)).Inc("TotalPosts", -1));
 
-            List<PostDocument> posts = (List<PostDocument>)themes.FindOne(Query.EQ("_id", themeId)).Posts;
+            List<PostDocument> posts = (List<PostDocument>)_themes.FindOne(Query.EQ("_id", themeId)).Posts;
             posts.Sort(delegate(PostDocument p1, PostDocument p2) { return p1.Date.CompareTo(p2.Date); });
             var lastPostInfo = String.Format("{0}, {1}", posts.Last().Date, posts.Last().Author);
-            themes.Update(Query.EQ("_id", themeId), Update.Set("LastPostInfo", lastPostInfo));
+            _themes.Update(Query.EQ("_id", themeId), Update.Set("LastPostInfo", lastPostInfo));
         }
     }
 }

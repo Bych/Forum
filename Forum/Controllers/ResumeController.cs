@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Forum.Helpers;
@@ -27,43 +26,80 @@ namespace Forum.Controllers
             return View();
         }
 
-        public FileUploadJsonResult AjaxUpload(ResumeModel model)
+        public JsonResult AjaxUpload()
         {
-            bool isSomethingUploaded = false;
-            string resultMessage = String.Format("Failed to upload");
+            //var isSomethingUploaded = false;
+            //var resultMessage = String.Empty;
+            var error = "File upload failed";
 
-            if (ModelState.IsValid)
+            if (Request.Files.Count != 0)
             {
-                // map model to Document
-                HttpPostedFileBase file = model.ResumeFile;
+                var file = Request.Files[0] as HttpPostedFileBase;
+                error = ValidateResume(file, new List<string> {".txt", ".doc", ".docx", ".pdf"}, 10*1024*1024);
 
-                //_resumeService.SaveResume(Document);
+                if (String.IsNullOrEmpty(error))
+                {
+                    // map model to Document
 
-                resultMessage = String.Format("{0} uploaded successfully.", Path.GetFileName(file.FileName));
+                    string path = AppDomain.CurrentDomain.BaseDirectory + @"Uploads\";
+                    string filename = Path.GetFileName(file.FileName);
+                    file.SaveAs(Path.Combine(path, filename)); //TODO: rewrite this
 
-                isSomethingUploaded = true;
+                    var fileId = "1";
+                    //var fileId = _resumeService.SaveResume(Document);
+
+                    if (!String.IsNullOrEmpty(fileId))
+                    {
+                        return new JsonResult
+                                   {
+                                       Data = new
+                                                  {
+                                                      Result = 1,
+                                                      FileId = fileId,
+                                                  }
+                                   };
+                    }
+                    else
+                    {
+                        error = "File save to database failed";
+                    }
+                }
             }
 
-            if (isSomethingUploaded)
-            {
-                return new FileUploadJsonResult
-                           {
-                               Data = new
-                                          {
-                                              screenMessage = resultMessage,
-                                              uploadFormHtml = RenderPartialHelper.RenderPartialViewToString("UploadForm", new ResumeModel(), this),
-                                          }
-                           };
-            }
-
-            return new FileUploadJsonResult
+            return new JsonResult
                        {
                            Data = new
                                       {
-                                          screenMessage = resultMessage,
-                                          uploadFormHtml = RenderPartialHelper.RenderPartialViewToString("UploadForm", model, this),
+                                          Result = 0,
+                                          ErrorMessage = error,
                                       }
                        };
+        }
+
+        [NonAction]
+        private string ValidateResume(HttpPostedFileBase file, ICollection<string> allowedFileExtensions, int maxContentLength)
+        {
+            var errorMessage = String.Empty;
+
+            if (!file.HasFile())
+            {
+                errorMessage = String.Format("File is not specified");
+                return errorMessage;
+            }
+
+            if (file.ContentLength > maxContentLength)
+            {
+                errorMessage = String.Format("File is too large, maximum allowed is: {0} MB", (maxContentLength / 1024 / 1024));
+                return errorMessage;
+            }
+
+            if (allowedFileExtensions != null  &&  !allowedFileExtensions.Contains(file.FileName.Substring(file.FileName.LastIndexOf('.'))))
+            {
+                errorMessage = String.Format("Please upload file of type: {0}", String.Join(", ", allowedFileExtensions));
+                return errorMessage;
+            }
+
+            return errorMessage;
         }
     }
 }

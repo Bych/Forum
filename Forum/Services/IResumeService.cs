@@ -9,7 +9,7 @@ namespace Forum.Services
 {
     public interface IResumeService
     {
-        void SaveResume(ResumeDocument resume);
+        string SaveResume(ResumeDocument resume);
 
         void DownloadResume(string fileId);
 

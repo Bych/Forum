@@ -15,8 +15,6 @@ namespace Forum.Documents
 
         public string Email { get; set; }
 
-        //public DateTime UploadDate { get; set; }
-
         public string Description { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace Forum.App_Code
             {
                 x.For<IThemeService>().Use<ThemeService>();
                 x.For<IPostService>().Use<PostService>();
-                x.For<IMongoHelper>().Use<MongoHelper>();
+                x.For<IMongoHelper>().Use<MongoHelper>().Ctor<String>().Is("Mongo");
                 x.For<IResumeService>().Use<ResumeService>();
             });
          

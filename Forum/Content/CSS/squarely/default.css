@@ -99,11 +99,14 @@ legend
     display: none;
 }
 
-input, textarea, select
+button, input, textarea, select
 {
     font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #333333;
+    border-width: 1px; 
+    margin-bottom: 10px;
+	padding: 2px 3px;
 }
 
 #wrapper
@@ -555,12 +558,3 @@ html > body #footer
 {
     height: 4em;
 }
-
-/* Text with margins */
-
-.busyImg
-{
-    width: 16px;
-    height: 16px;
-}
-

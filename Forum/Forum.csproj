@@ -79,7 +79,6 @@
     <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\ResumeController.cs" />
     <Compile Include="Controllers\ThemeController.cs" />
-    <Compile Include="CustomAttributes\ValidateFileAttribute.cs" />
     <Compile Include="Documents\ResumeDocument.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -95,7 +94,6 @@
     <Compile Include="Models\PostListItemModel.cs" />
     <Compile Include="Models\PostListModel.cs" />
     <Compile Include="Models\PostModel.cs" />
-    <Compile Include="Models\ResumeModel.cs" />
     <Compile Include="Models\ThemeListItemModel.cs" />
     <Compile Include="Models\ThemeModel.cs" />
     <Compile Include="Models\ThemeListModel.cs" />
@@ -110,7 +108,10 @@
   <ItemGroup>
     <Content Include="Content\CSS\squarely\default.css" />
     <Content Include="Content\CSS\squarely\images\Antarctic-penguins.jpg" />
+    <Content Include="Content\CSS\squarely\images\blankButton.png" />
     <Content Include="Content\CSS\squarely\images\busy.gif" />
+    <Content Include="Content\CSS\squarely\images\ButtonUploadText_61x22.png" />
+    <Content Include="Content\CSS\squarely\images\cancelbutton.gif" />
     <Content Include="Content\CSS\squarely\images\img01.gif" />
     <Content Include="Content\CSS\squarely\images\img02.gif" />
     <Content Include="Content\CSS\squarely\images\img03.gif" />
@@ -118,6 +119,7 @@
     <Content Include="Content\CSS\squarely\images\img05.gif" />
     <Content Include="Content\CSS\squarely\images\spacer.gif" />
     <Content Include="Content\CSS\squarely\index.html" />
+    <Content Include="Content\CSS\squarely\uploader.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -158,6 +160,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Scripts\SWFUpload\fileprogress.js" />
+    <Content Include="Scripts\SWFUpload\handlers.js" />
+    <Content Include="Scripts\SWFUpload\swfupload.js" />
+    <Content Include="Scripts\SWFUpload\swfupload.swf" />
     <Content Include="Scripts\tiny_mce\langs\en.js" />
     <Content Include="Scripts\tiny_mce\license.txt" />
     <Content Include="Scripts\tiny_mce\plugins\advhr\css\advhr.css" />
@@ -413,7 +419,9 @@
     <Content Include="Scripts\tiny_mce\utils\mctabs.js" />
     <Content Include="Scripts\tiny_mce\utils\validate.js" />
     <Content Include="TestPage.htm" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

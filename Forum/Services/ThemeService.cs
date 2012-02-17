@@ -12,18 +12,18 @@ namespace Forum.Services
 {
     public class ThemeService : IThemeService
     {
-        private MongoCollection<ThemeDocument> themes;
+        private readonly MongoCollection<ThemeDocument> _themes;
 
         public ThemeService(IMongoHelper mongoHelper)
         {
-            themes = mongoHelper.GetCollection<ThemeDocument>("theme");
+            _themes = mongoHelper.GetCollection<ThemeDocument>("theme");
         }
 
         public void AddTheme(ThemeDocument theme)
         {
             if (theme != null)
             {
-                PostDocument firstPost = new PostDocument();
+                var firstPost = new PostDocument();
                 firstPost.PostId = ObjectId.GenerateNewId();
                 firstPost.Author = theme.Author;
                 firstPost.Date = theme.Date;
@@ -34,18 +34,18 @@ namespace Forum.Services
                 theme.TotalPosts = theme.Posts.Count;
                 theme.Url = theme.Title.GenerateSlug();
 
-                themes.Insert(theme);
+                _themes.Insert(theme);
             }
         }
 
         public void DeleteTheme(ObjectId themeId)
         {
-            themes.Remove(Query.EQ("_id", themeId));
+            _themes.Remove(Query.EQ("_id", themeId));
         }
 
         public IEnumerable<ThemeDocument> GetThemes(int pageIndex, int pageSize)
         {
-            return themes.FindAll()
+            return _themes.FindAll()
                 .SetFields(Fields.Exclude("Posts"))
                 .SetSortOrder(SortBy.Descending("Date"))
                 .SetSkip(pageIndex * pageSize)
@@ -54,12 +54,12 @@ namespace Forum.Services
 
         public int GetThemesCount()
         {
-            return (int)themes.FindAll().Count();
+            return (int)_themes.FindAll().Count();
         }
 
         public ThemeDocument GetTheme(ObjectId themeId)
         {
-            var theme = themes.FindOne(Query.EQ("_id", themeId));
+            var theme = _themes.FindOne(Query.EQ("_id", themeId));
             theme.Posts.OrderByDescending(p => p.Date);
 
             return theme;
@@ -67,7 +67,7 @@ namespace Forum.Services
 
         public ThemeDocument GetTheme(string url)
         {
-            var theme = themes.FindOne(Query.EQ("Url", url));
+            var theme = _themes.FindOne(Query.EQ("Url", url));
             theme.Posts.OrderByDescending(p => p.Date);
 
             return theme;

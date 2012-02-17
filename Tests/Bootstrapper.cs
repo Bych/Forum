@@ -25,7 +25,7 @@ namespace Tests
                                      {
                                          config.For<IThemeService>().Use<ThemeService>();
                                          config.For<IPostService>().Use<PostService>();
-                                         config.For<IMongoHelper>().Use<MongoHelperTest>();
+                                         config.For<IMongoHelper>().Use<MongoHelper>().Ctor<string>().Is("MongoTest");
                                      });
         }
 

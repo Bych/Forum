@@ -10,16 +10,4 @@ namespace Forum.Helpers
             return (file != null && file.ContentLength > 0) ? true : false;
         }
     }
-
-    public class FileUploadJsonResult : JsonResult
-    {
-        public override void ExecuteResult(ControllerContext context)
-        {
-            this.ContentType = "text/html";
-            context.HttpContext.Response.Write("<textarea>");
-            base.ExecuteResult(context);
-            context.HttpContext.Response.Write("</textarea>");
-        }
-    }
-    
 }
