@@ -40,17 +40,6 @@ function doSubmit(e) {
 	return false;
 }
 
- // Called by the queue complete handler to submit the form
-function uploadDone() {
-    // no need to submit form, cause uploading file has been already processed
-    /*
-	try {
-		document.forms[0].submit();
-	} catch (ex) {
-		alert("Error submitting form");
-	}
-    */
-}
 
 function fileDialogStart() {
     document.getElementById("txtFileName").value = "";
@@ -137,7 +126,7 @@ function handleServerData(serverData) {
     window.swfu.customSettings.upload_successful = uploadSuccessful;
     document.getElementById("hidFileID").value = jsonServerData.FileId;
     if (uploadSuccessful) {
-        jQuery("#AjaxUploadForm")[0].reset();
+        //jQuery("#AjaxUploadForm")[0].reset();
         errorMessage.innerHTML = "";
     }
     else {
@@ -165,6 +154,17 @@ function uploadComplete(file) {
 		}
 	} catch (e) {
 	}
+}
+
+// Called by the queue complete handler to submit the form
+function uploadDone() {
+    if (window.swfu.customSettings.upload_successful) {
+        try {
+            //jQuery(document.forms[0]).ajaxSubmit();
+        } catch (ex) {
+            alert("Error submitting form");
+        }
+    }
 }
 
 function uploadError(file, errorCode, message) {

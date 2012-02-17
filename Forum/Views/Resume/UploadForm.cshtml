@@ -1,20 +1,18 @@
 ﻿@*-- Uploader scripts --*@
-<script src="@Url.Content("~/Scripts/SWFUpload/swfupload.js")" type="text/javascript"></script>
-@*<script src="@Url.Content("~/Scripts/SWFUpload/jquery-asyncUpload-0.1.js")" type="text/javascript"></script>*@
-<script src="@Url.Content("~/Scripts/SWFUpload/fileprogress.js")" type="text/javascript"></script>
-<script src="@Url.Content("~/Scripts/SWFUpload/handlers.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/SWFUpload/swfupload.js")" type="text/javascript"> </script>
+<script src="@Url.Content("~/Scripts/SWFUpload/fileprogress.js")" type="text/javascript"> </script>
+<script src="@Url.Content("~/Scripts/SWFUpload/handlers.js")" type="text/javascript"> </script>
 
 <script type="text/javascript">
     var swfu;
     $(document).ready(function() {
-        var actionMethod = $("#AjaxUploadForm").attr("action");
         swfu = new SWFUpload({
                 // Backend settings
-                upload_url: actionMethod,
+                upload_url: "/Resume/AjaxUpload",
 
 				// Flash file settings
                 file_size_limit: "10 MB",
-                file_types: "*.*", /*"*.txt; *.doc; *.docx; *.pdf",*/
+                file_types: "*.txt; *.doc; *.docx; *.pdf",
                 file_types_description: "Resume files",
                 file_upload_limit: "0",
                 file_queue_limit: "1",
@@ -34,9 +32,9 @@
                 upload_complete_handler: uploadComplete,
 
 				// Button Settings
-                button_image_url: '@Url.Content("~/Content/CSS/squarely/images/ButtonUploadText_61x22.png")', 
-                button_placeholder_id: "spanButtonPlaceholder", 
-                button_width: 61,  
+                button_image_url: '@Url.Content("~/Content/CSS/squarely/images/ButtonUploadText_61x22.png")',
+                button_placeholder_id: "spanButtonPlaceholder",
+                button_width: 61,
                 button_height: 22,
 				
 				// Flash Settings
@@ -50,33 +48,72 @@
 				// Debug settings
                 debug: false
             });
+
+
+            $("#AjaxUploadForm").submit("submit", function () {
+                alert('Handler for .submit() called.');
+            });
     });
     </script>
 
+@model Forum.Models.ResumeModel
+   
+@Html.ValidationSummary(true, "File upload was unsuccessful. Please correct the errors and try again.")        
 @{
-    using (Html.BeginForm("AjaxUpload", "Resume", FormMethod.Post, new {id = "AjaxUploadForm", enctype = "multipart/form-data"}))
+    using (Html.BeginForm("AddResume", "Resume", FormMethod.Post, new {id = "AjaxUploadForm", enctype = "multipart/form-data"}))
     {
         <table>
             <tr>
-                <td colspan="2">
+                <td>
+                    @Html.LabelFor(m => m.Email)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Email)
+                    @Html.ValidationMessageFor(m => m.Email)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Description)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Description)
+                    @Html.ValidationMessageFor(m => m.Description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.FileName, "Resume (10 MB max)")
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.FileName, new {@id = "txtFileName", @type = "text", @readonly = "readonly"})
+                    <span id="spanButtonPlaceholder"></span>
+                    @Html.ValidationMessageFor(m => m.FileName)
+                    <label id="errorMessage"></label>
+                    <div class="flash" id="fsUploadProgress">
+                        <!-- This is where the file progress gets shown.  SWFUpload doesn't update the UI directly. -->
+                        <!-- The Handlers (in handlers.js) process the upload events and make the UI updates -->
+                    </div>
+                    @Html.TextBoxFor(m => m.FileId, new {id = "hidFileID", type = "hidden"})
+                </td>
+
+                @*<td colspan="2">
                     <div>
                         Resume (10 MB max):
                         <input type="text" id="txtFileName" disabled="true" style="border: solid 1px; background-color: #FFFFFF;" />
                         <span id="spanButtonPlaceholder"></span>
                     </div>
-                        <label id="errorMessage"></label>
-                    <div>
-                    </div>
+                    <label id="errorMessage"></label>
                     <div class="flash" id="fsUploadProgress">
                         <!-- This is where the file progress gets shown.  SWFUpload doesn't update the UI directly. -->
                         <!-- The Handlers (in handlers.js) process the upload events and make the UI updates -->
                     </div>
                     <input type="hidden" name="hidFileID" id="hidFileID" value="" />
                     <!-- This is where the file ID is stored after SWFUpload uploads the file and gets the ID back from ActionMethod -->
-                </td>
+                </td>*@
             </tr>
             <tr>
-                <td>
+                <td>    
                     <input id="btnSubmit" type="submit" value="Submit" />
                 </td>
             </tr>

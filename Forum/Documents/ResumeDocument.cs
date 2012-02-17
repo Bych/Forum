@@ -8,12 +8,13 @@ namespace Forum.Documents
 {
     public class ResumeDocument
     {
-        [BsonId]
-        public string ResumeId { get; set; }
+        public string Id { get; set; }
 
         public string FileId { get; set; }
 
         public string Email { get; set; }
+
+        public DateTime UploadDate { get; set; }
 
         public string Description { get; set; }
     }

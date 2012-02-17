@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web;
-using Forum.Helpers;
+using Forum.Documents;
 
 
 namespace Forum.Services
@@ -12,7 +12,11 @@ namespace Forum.Services
         public string[] AllowedFileExtensions = new[] { ".txt", ".doc", ".docx", ".pdf" };
         public string[] AllowedContentTypes;
 
-        public string SaveResume(Documents.ResumeDocument resume)
+        public void SaveResumeDocument(ResumeDocument resume)
+        {
+        }
+
+        public string SaveResumeFile(HttpPostedFileBase file)
         {
             return "";
         }

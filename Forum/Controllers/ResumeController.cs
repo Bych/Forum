@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Web;
 using System.Web.Mvc;
+using Forum.Documents;
 using Forum.Helpers;
 using Forum.Models;
 using Forum.Services;
+using MongoDB.Bson;
 
 namespace Forum.Controllers
 {
@@ -26,10 +28,47 @@ namespace Forum.Controllers
             return View();
         }
 
+        public JsonResult AddResume(ResumeModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var resumeDocument = ResumeModel2Document(model);
+                _resumeService.SaveResumeDocument(resumeDocument);
+
+                return new JsonResult
+                {
+                    Data = new
+                    {
+                        Result = 1,
+                        resumeHtml = RenderPartialHelper.RenderPartialViewToString("UploadForm", new ResumeModel(), this),
+                    }
+                };
+            }
+
+            return new JsonResult
+            {
+                Data = new
+                {
+                    Result = 0,
+                    resumeHtml = RenderPartialHelper.RenderPartialViewToString("UploadForm", model, this),
+                }
+            };
+        }
+
+        public ResumeDocument ResumeModel2Document(ResumeModel model)
+        {
+            return new ResumeDocument
+                       {
+                           Id = ObjectId.GenerateNewId().ToString(),
+                           FileId = model.FileId,
+                           Email = model.Email,
+                           UploadDate = DateTime.Now,
+                           Description = model.Description,
+                       };
+        }
+
         public JsonResult AjaxUpload()
         {
-            //var isSomethingUploaded = false;
-            //var resultMessage = String.Empty;
             var error = "File upload failed";
 
             if (Request.Files.Count != 0)

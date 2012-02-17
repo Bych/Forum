@@ -1,68 +1,68 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="0" fromTop="0" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/f:jquery-ui-1.8.11.js" caret="0" fromTop="0" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/f:jquery.validate.min.js" caret="0" fromTop="0" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/f:jquery-1.5.1-vsdoc.js" caret="4037" fromTop="22" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Models/f:ThemeListItemModel.cs" caret="250" fromTop="11" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Models/f:PostListItemModel.cs" caret="391" fromTop="18" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:RenderPartialHelper.cs" caret="438" fromTop="13" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Documents/f:ThemeDocument.cs" caret="368" fromTop="15" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Documents/f:PostDocument.cs" caret="311" fromTop="13" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ThemeController.cs" caret="8241" fromTop="22" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:App_Code/f:StructureMapDependencyResolver.cs" caret="1327" fromTop="20" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Shared/f:_Layout.cshtml" caret="264" fromTop="6" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Models/f:PostModel.cs" caret="0" fromTop="0" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:PostService.cs" caret="0" fromTop="0" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:IResumeService.cs" caret="222" fromTop="11" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:tiny_mce/d:plugins/d:inlinepopups/f:editor_plugin_src.js" caret="7707" fromTop="20" />
       <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/f:modernizr-1.7.js" caret="14744" fromTop="16" />
       <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Content/d:CSS/d:squarely/f:default.css" caret="0" fromTop="0" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:ResumeService.cs" caret="380" fromTop="6" />
       <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:fileprogress.js" caret="3503" fromTop="34" />
       <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:swfupload.js" caret="20587" fromTop="16" />
       <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:FileUploadHelper.cs" caret="293" fromTop="12" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:IMongoHelper.cs" caret="169" fromTop="7" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:MongoHelper.cs" caret="1001" fromTop="30" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/f:Web.config" caret="498" fromTop="13" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:PostService.cs" caret="476" fromTop="18" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:App_Code/f:Bootstrapper.cs" caret="546" fromTop="19" />
+      <File id="8BCF94A6-7D7B-41E6-A6FC-428B96965D80/f:Bootstrapper.cs" caret="925" fromTop="21" />
       <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/f:Web.config" caret="42" fromTop="3" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:Upload.cshtml" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Account/f:Register.cshtml" caret="1278" fromTop="31" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Models/f:PostModel.cs" caret="308" fromTop="14" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:App_Code/f:StructureMapDependencyResolver.cs" caret="327" fromTop="14" />
       <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Content/d:CSS/d:squarely/f:uploader.css" caret="1670" fromTop="17" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Theme/f:Detail.cshtml" caret="1243" fromTop="0" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="2290" fromTop="25" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="725" fromTop="25" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1851" fromTop="35" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/f:Web.config" caret="496" fromTop="10" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="1004" fromTop="21" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Account/f:LogOn.cshtml" caret="529" fromTop="14" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Models/f:ResumeModel.cs" caret="314" fromTop="14" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="3905" fromTop="18" />
+      <File id="010D7CF5-D5D7-477D-9B64-ADB27D73C57A/f:LabelExtensions.cs" caret="950" fromTop="20" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Documents/f:ResumeDocument.cs" caret="390" fromTop="17" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:ThemeService.cs" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:IResumeService.cs" caret="320" fromTop="13" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1464" fromTop="25" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ThemeController.cs" caret="3770" fromTop="27" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:ResumeService.cs" caret="567" fromTop="19" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Theme/f:AddPost.cshtml" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Theme/f:Detail.cshtml" caret="2436" fromTop="20" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:Upload.cshtml" caret="42" fromTop="5" />
     </RecentFiles>
     <RecentEdits>
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="4418" fromTop="25" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="3869" fromTop="9" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="2530" fromTop="6" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="5094" fromTop="22" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="2872" fromTop="21" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Content/d:CSS/d:squarely/f:uploader.css" caret="1903" fromTop="20" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="2275" fromTop="11" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:Upload.cshtml" caret="0" fromTop="0" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="0" fromTop="0" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="342" fromTop="4" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="4418" fromTop="28" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="4418" fromTop="8" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="2144" fromTop="17" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="861" fromTop="14" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="3857" fromTop="18" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Content/d:CSS/d:squarely/f:uploader.css" caret="1670" fromTop="17" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="4491" fromTop="21" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="4044" fromTop="6" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="4450" fromTop="16" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="4409" fromTop="14" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="4609" fromTop="15" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Helpers/f:FileUploadHelper.cs" caret="293" fromTop="12" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="2407" fromTop="28" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1851" fromTop="26" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/f:Web.config" caret="42" fromTop="11" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/f:Web.config" caret="802" fromTop="9" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/f:Web.config" caret="42" fromTop="3" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/f:Web.config" caret="363" fromTop="12" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/f:Web.config" caret="42" fromTop="3" />
-      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/f:Web.config" caret="205" fromTop="1" />
+      <File id="8BCF94A6-7D7B-41E6-A6FC-428B96965D80/f:Bootstrapper.cs" caret="925" fromTop="21" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/f:Web.config" caret="498" fromTop="13" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="2758" fromTop="12" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Account/f:Register.cshtml" caret="0" fromTop="0" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Documents/f:ResumeDocument.cs" caret="207" fromTop="10" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Documents/f:ResumeDocument.cs" caret="390" fromTop="17" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="125" fromTop="2" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="2506" fromTop="14" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="2548" fromTop="15" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="3067" fromTop="29" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Models/f:ResumeModel.cs" caret="130" fromTop="6" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="4323" fromTop="30" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="4896" fromTop="33" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="2258" fromTop="9" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="1199" fromTop="19" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="1207" fromTop="24" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Scripts/d:SWFUpload/f:handlers.js" caret="1010" fromTop="17" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="3285" fromTop="14" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:UploadForm.cshtml" caret="3905" fromTop="21" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Models/f:ResumeModel.cs" caret="314" fromTop="14" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1980" fromTop="24" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:IResumeService.cs" caret="220" fromTop="11" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:ResumeService.cs" caret="90" fromTop="2" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:IResumeService.cs" caret="320" fromTop="13" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:ResumeService.cs" caret="578" fromTop="18" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Services/f:ResumeService.cs" caret="567" fromTop="19" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="902" fromTop="16" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1236" fromTop="23" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Controllers/f:ResumeController.cs" caret="1464" fromTop="25" />
+      <File id="E76AFCB7-F3F3-4327-9E16-7AEF4DAB68EE/d:Views/d:Resume/f:Upload.cshtml" caret="59" fromTop="6" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -85,10 +85,10 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="var" priority="351" />
-      <Item value="new" priority="416" />
+      <Item value="var" priority="383" />
+      <Item value="new" priority="448" />
       <Item value="int" priority="92" />
-      <Item value="public" priority="383" />
+      <Item value="public" priority="607" />
       <Item value="ForumTest`0" priority="31" />
       <Item value="using" priority="61" />
       <Item value="Moq" priority="30" />
@@ -101,7 +101,7 @@
       <Item value="ThemeDocument" priority="28" />
       <Item value="Author" priority="31" />
       <Item value="Date" priority="65" />
-      <Item value="DateTime`0" priority="64" />
+      <Item value="DateTime`0" priority="129" />
       <Item value="Details" priority="97" />
       <Item value="LastPostInfo" priority="32" />
       <Item value="String`0" priority="321" />
@@ -125,14 +125,14 @@
       <Item value="themeDocuments" priority="97" />
       <Item value="pageIndex" priority="31" />
       <Item value="pageSize" priority="31" />
-      <Item value="private" priority="95" />
+      <Item value="private" priority="127" />
       <Item value="AfterAssemblyInitializeEventArgs`0" priority="31" />
       <Item value="void" priority="223" />
       <Item value="TestInitialize" priority="31" />
       <Item value="ThemeModel" priority="28" />
       <Item value="theme" priority="65" />
       <Item value="ThemeController" priority="28" />
-      <Item value="return" priority="223" />
+      <Item value="return" priority="319" />
       <Item value="IContainer`0" priority="30" />
       <Item value="Bootstrapper`0" priority="30" />
       <Item value="container" priority="30" />
@@ -142,9 +142,9 @@
       <Item value="mongoDatabaseSettings" priority="32" />
       <Item value="MongoDatabaseSettings" priority="28" />
       <Item value="server" priority="31" />
-      <Item value="MongoDatabase`0" priority="63" />
+      <Item value="MongoDatabase`0" priority="95" />
       <Item value="IEnumerable" priority="95" />
-      <Item value="string" priority="319" />
+      <Item value="string" priority="509" />
       <Item value="connectionStringBuilder" priority="32" />
       <Item value="MongoConnectionStringBuilder" priority="28" />
       <Item value="IMongoHelper" priority="95" />
@@ -154,7 +154,7 @@
       <Item value="IMongoHelper`0" priority="31" />
       <Item value="config" priority="31" />
       <Item value="MongoHelperTest`0" priority="30" />
-      <Item value="model" priority="127" />
+      <Item value="model" priority="258" />
       <Item value="Assert`0" priority="95" />
       <Item value="_themeService" priority="64" />
       <Item value="null" priority="95" />
@@ -173,7 +173,7 @@
       <Item value="ResumeDocument`0" priority="31" />
       <Item value="Html" priority="59" />
       <Item value="Upload`0" priority="31" />
-      <Item value="if" priority="159" />
+      <Item value="if" priority="191" />
       <Item value="file" priority="63" />
       <Item value="else" priority="95" />
       <Item value="input" priority="29" />
@@ -197,6 +197,23 @@
       <Item value="resultMessage" priority="32" />
       <Item value="errorMessage" priority="31" />
       <Item value="fileId" priority="31" />
+      <Item value="database" priority="31" />
+      <Item value="Database" priority="32" />
+      <Item value="MongoHelper`0" priority="31" />
+      <Item value="MongoServer`0" priority="31" />
+      <Item value="prop" priority="95" />
+      <Item value="Model" priority="29" />
+      <Item value="m" priority="63" />
+      <Item value="object" priority="28" />
+      <Item value="ResumeModel`0" priority="63" />
+      <Item value="ModelState" priority="31" />
+      <Item value="ResumeDocument" priority="28" />
+      <Item value="Id" priority="31" />
+      <Item value="FileId" priority="32" />
+      <Item value="Email" priority="32" />
+      <Item value="UploadDate" priority="32" />
+      <Item value="Description" priority="32" />
+      <Item value="MapResume`0" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Mock`1">
       <Item value="Setup`0" priority="134" />
@@ -209,7 +226,7 @@
       <Item value="GetThemesCount`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Now" priority="27" />
+      <Item value="Now" priority="55" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Format`0" priority="54" />
@@ -217,7 +234,7 @@
       <Item value="IsNullOrEmpty`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@MongoDB.Bson.ObjectId">
-      <Item value="GenerateNewId`0" priority="55" />
+      <Item value="GenerateNewId`0" priority="83" />
       <Item value="Empty" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
@@ -282,9 +299,11 @@
     <ItemStatistics item="RazorTransitionCompletionContext">
       <Item value="Html" priority="15" />
       <Item value="Action`0" priority="9" />
+      <Item value="Model" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
       <Item value="RenderPartial`0" priority="53" />
+      <Item value="TextBoxFor`2" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="HtmlCodeCompletionContext">
       <Item value="br" priority="12" />
@@ -329,7 +348,7 @@
       <Item value="true" priority="32" />
       <Item value="$get" priority="9" />
       <Item value="Action`0" priority="5" />
-      <Item value="if" priority="21" />
+      <Item value="if" priority="32" />
       <Item value="else" priority="10" />
       <Item value="node" priority="10" />
       <Item value="serverData" priority="10" />
@@ -355,9 +374,25 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Forum.Models.ResumeModel">
       <Item value="ResumeFile" priority="26" />
+      <Item value="Description" priority="54" />
+      <Item value="FileName" priority="26" />
+      <Item value="FileId" priority="54" />
+      <Item value="Email" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpFileCollectionBase">
       <Item value="Count" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Pipeline.SmartInstance`1+DependencyExpression`1">
+      <Item value="Is`0" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Pipeline.SmartInstance`1">
+      <Item value="Ctor`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ModelStateDictionary">
+      <Item value="IsValid" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MongoDB.Bson.ObjectId">
+      <Item value="ToString`0" priority="27" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
