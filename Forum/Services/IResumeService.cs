@@ -9,12 +9,16 @@ namespace Forum.Services
 {
     public interface IResumeService
     {
-        void SaveResumeDocument(ResumeDocument resume);
+        void SaveResume(ResumeDocument resume);
+
+        IEnumerable<ResumeDocument> GetResumes(int pageIndex, int pageSize);
+
+        int GetResumesCount();
 
         string SaveResumeFile(HttpPostedFileBase file);
 
-        void DownloadResume(string fileId);
+        ResumeFileDocument GetResumeFile(string fileId, bool initContent = true);
 
-        IEnumerable<ResumeDocument> GetResumes(int pageIndex, int pageSize);
+        void DeleteResumeFile(string fileId);
     }
 }

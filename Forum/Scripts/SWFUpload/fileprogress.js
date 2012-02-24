@@ -70,7 +70,7 @@ FileProgress.prototype.setComplete = function () {
 	var oSelf = this;
 	setTimeout(function () {
 		oSelf.disappear();
-	}, 10000);
+	}, 5000);
 };
 FileProgress.prototype.setError = function () {
 	this.appear();

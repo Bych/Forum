@@ -7,7 +7,6 @@ using Forum.Helpers;
 using Forum.Services;
 using Forum.Models;
 using MongoDB.Bson;
-using System.IO;
 using MvcPaging;
 
 [assembly: InternalsVisibleTo("Tests")]

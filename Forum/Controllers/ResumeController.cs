@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Forum.Documents;
@@ -8,11 +8,15 @@ using Forum.Helpers;
 using Forum.Models;
 using Forum.Services;
 using MongoDB.Bson;
+using MongoDB.Driver.GridFS;
+using MvcPaging;
 
 namespace Forum.Controllers
 {
+    [HandleError]
     public class ResumeController : AuthenticationController
     {
+        private const int DefaultPageSize = 10;
         private readonly IResumeService _resumeService;
 
         public ResumeController(IResumeService resumeService)
@@ -20,52 +24,43 @@ namespace Forum.Controllers
             _resumeService = resumeService;
         }
 
-        //
-        // GET: /Resume/
-
         public ActionResult Upload()
         {
             return View();
         }
 
-        public JsonResult AddResume(ResumeModel model)
+
+        [HttpPost]
+        public ActionResult AddResume(ResumeModel model)
         {
             if (ModelState.IsValid)
             {
-                var resumeDocument = ResumeModel2Document(model);
-                _resumeService.SaveResumeDocument(resumeDocument);
+                var resumeDocument = MapResumeDocument(model);
+                _resumeService.SaveResume(resumeDocument);
 
                 return new JsonResult
                 {
                     Data = new
                     {
                         Result = 1,
-                        resumeHtml = RenderPartialHelper.RenderPartialViewToString("UploadForm", new ResumeModel(), this),
+                        //resumeHtml = RenderPartialHelper.RenderPartialViewToString("UploadForm", new ResumeModel(), this),
                     }
                 };
             }
+
+            // if model state is invalid, then previously uploaded file must be deleted
+            DeleteResumeFile(model.FileId);
 
             return new JsonResult
             {
                 Data = new
                 {
                     Result = 0,
-                    resumeHtml = RenderPartialHelper.RenderPartialViewToString("UploadForm", model, this),
+                    ResumeHtml = RenderPartialHelper.RenderPartialViewToString("UploadForm", model, this),
                 }
             };
         }
-
-        public ResumeDocument ResumeModel2Document(ResumeModel model)
-        {
-            return new ResumeDocument
-                       {
-                           Id = ObjectId.GenerateNewId().ToString(),
-                           FileId = model.FileId,
-                           Email = model.Email,
-                           UploadDate = DateTime.Now,
-                           Description = model.Description,
-                       };
-        }
+        
 
         public JsonResult AjaxUpload()
         {
@@ -75,18 +70,10 @@ namespace Forum.Controllers
             {
                 var file = Request.Files[0] as HttpPostedFileBase;
                 error = ValidateResume(file, new List<string> {".txt", ".doc", ".docx", ".pdf"}, 10*1024*1024);
-
+                
                 if (String.IsNullOrEmpty(error))
                 {
-                    // map model to Document
-
-                    string path = AppDomain.CurrentDomain.BaseDirectory + @"Uploads\";
-                    string filename = Path.GetFileName(file.FileName);
-                    file.SaveAs(Path.Combine(path, filename)); //TODO: rewrite this
-
-                    var fileId = "1";
-                    //var fileId = _resumeService.SaveResume(Document);
-
+                    var fileId = _resumeService.SaveResumeFile(file);
                     if (!String.IsNullOrEmpty(fileId))
                     {
                         return new JsonResult
@@ -115,6 +102,7 @@ namespace Forum.Controllers
                        };
         }
 
+
         [NonAction]
         private string ValidateResume(HttpPostedFileBase file, ICollection<string> allowedFileExtensions, int maxContentLength)
         {
@@ -140,5 +128,70 @@ namespace Forum.Controllers
 
             return errorMessage;
         }
+
+        public void DeleteResumeFile(string fileId)
+        {
+            if (!String.IsNullOrEmpty(fileId))
+                _resumeService.DeleteResumeFile(fileId);
+        }
+
+
+        public ActionResult ResumeList(int? page)
+        {
+            var currentPageIndex = page.HasValue ? page.Value - 1 : 0;
+            var resumeList = new List<ResumeListItemModel>();
+            var resumes = _resumeService.GetResumes(currentPageIndex, DefaultPageSize);
+
+            foreach (var resumeDocument in resumes)
+            {
+                var resumeFileDocument = _resumeService.GetResumeFile(resumeDocument.FileId, false);
+                resumeList.Add(MapResumeListItemModel(resumeDocument, resumeFileDocument));
+            }
+
+            var model = new ResumeListModel
+                            {
+                                Resumes = resumeList.ToPagedList(currentPageIndex, DefaultPageSize, _resumeService.GetResumesCount()),
+                            };
+
+            return View(model);
+        }
+
+
+        public ActionResult DownloadResume(string id)
+        {
+            var resumeDocument = _resumeService.GetResumeFile(id);
+            if (resumeDocument != null)
+                return File(resumeDocument.Content, resumeDocument.ContentType, resumeDocument.Name);
+            else
+            {
+                throw new MongoGridFSException("Oops :(. File not found in the database.");
+            }
+        }
+
+
+        #region Mappers
+        public ResumeDocument MapResumeDocument(ResumeModel resumeModel)
+        {
+            return new ResumeDocument
+            {
+                Id = ObjectId.GenerateNewId().ToString(),
+                FileId = resumeModel.FileId,
+                Email = resumeModel.Email,
+                Description = resumeModel.Description,
+            };
+        }
+
+        public ResumeListItemModel MapResumeListItemModel(ResumeDocument resumeDocument, ResumeFileDocument resumeFileDocument)
+        {
+            return new ResumeListItemModel
+            {
+                FileId = resumeDocument.FileId,
+                FileName = resumeFileDocument.Name,
+                Email = resumeDocument.Email,
+                UploadDate = resumeFileDocument.UploadDate,
+                Description = resumeDocument.Description,
+            };
+        }
+        #endregion
     }
 }

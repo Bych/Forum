@@ -1,0 +1,66 @@
+﻿@using MvcPaging
+@using Forum.Models
+@using Forum.Helpers
+@model ResumeListModel
+
+@section Head {
+    <link href="@Url.Content("~/Content/CSS/squarely/uploader.css")" type="text/css" rel="Stylesheet" />
+}
+
+@{
+    ViewBag.Title = "ResumeList";
+}
+
+<h2>Resume list</h2>
+
+
+
+<div class="content">
+    <table class="resumeTable" >
+        <tbody>
+        <tr>
+            <th class="resume-email">
+                E-mail
+            </th>
+            <th class="resume-filename">
+                File name
+            </th>
+            <th class="resume-description">
+                Description
+            </th>
+            <th class="resume-date">
+                Uploaded
+            </th>
+            <th class="resume-download">
+            </th>
+        </tr>
+        @{
+            foreach (var resume in Model.Resumes)
+            {
+                <tr>
+                    @Html.HiddenFor(r => resume.FileId)
+                    <td class="resume-email">
+                        @Html.DisplayFor(r => resume.Email)
+                    </td>
+                    <td class="resume-filename">
+                        @Html.DisplayFor(r => resume.FileName)
+                    </td>
+                    <td class="resume-description">
+                        @Html.DisplayFor(r => resume.Description)
+                    </td>
+                    <td class="resume-date">
+                        @Html.DisplayFor(r => resume.UploadDate)
+                    </td>
+                    <td class="resume-download">
+                        @Html.ImageLink(@Url.Content("~/Content/CSS/squarely/images/download.png"), "Download", "DownloadResume", "Resume", new { id = resume.FileId }, null, new { @width="28px", height="28px" })
+                    </td>
+                </tr>
+            }
+        }
+        </tbody>
+    </table>
+</div>
+<div class="pager">
+	@Html.Pager(Model.Resumes.PageSize, Model.Resumes.PageNumber, Model.Resumes.TotalItemCount)
+</div>
+

@@ -40,6 +40,11 @@ p, ul, ol
     line-height: 26px;
 }
 
+td
+{
+    vertical-align: top;
+}
+
 a:link
 {
     color: #EFCE58;
@@ -104,8 +109,7 @@ button, input, textarea, select
     font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #333333;
-    border-width: 1px; 
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 	padding: 2px 3px;
 }
 
@@ -519,7 +523,24 @@ html > body #footer
     color: Black;
 }
 
-/* Post Table Data */
+/* Post Table */
+
+.postTable
+{
+    border-collapse: separate;  
+}
+
+.postTable td, .postTable th
+{
+    border: none;
+    border-bottom: 1px solid; 
+    border-color: #D0FF00; 
+}
+
+.postTable td
+{
+    height: 4em;
+}
 
 .post-author
 {
@@ -541,20 +562,6 @@ html > body #footer
     width:10%;    
 }
 
-/* Tables */
-.postTable
-{
-    border-collapse: separate;  
-}
 
-.postTable td, .postTable th
-{
-    border: none;
-    border-bottom: 1px solid; 
-    border-color: #D0FF00; 
-}
 
-.postTable td
-{
-    height: 4em;
-}
+

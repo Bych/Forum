@@ -105,14 +105,90 @@ a.progressCancel:hover {
 	background-position: 0px 0px;
 }
 
+#resumeEmail, #resumeDescription, #resumeFileName
+{
+    width: 200px;
+}
+
+#resumeDescription
+{
+    height: 50px;    
+    resize: none;
+}
+
 
 /* -- SWFUpload Object Styles ------------------------------- */
 .swfupload {
 	vertical-align: top;
 }
 
-/* -- Error message -- */
-#errorMessage
+/* -- No script message -- */
+.noscriptmsg
 {
-    color: red;
+    background-color: #AE0000;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* -- Error element class -- */
+.input-validation-error 
+{
+    background-color: #FFEEEE;
+    border: 1px solid #FF0000;
+}
+
+.field-validation-error
+{
+    color: Red;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* -- Resume table -- */
+
+.resumeTable
+{
+    border-collapse: collapse;
+}
+
+.resumeTable td, .resumeTable th
+{
+    border: none;
+    border-bottom: 1px solid; 
+    border-color: #D0FF00; 
+}
+
+.resumeTable td
+{
+    height: 4em;
+}
+
+.resume-email
+{
+    width:20%;    
+}
+
+.resume-filename
+{
+    width:20%;    
+}
+
+.resume-description
+{
+    width:40%;    
+}
+
+.resume-date
+{
+    width:15%;    
+}
+
+.resume-download
+{
+    width:5%;    
 }

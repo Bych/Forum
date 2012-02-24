@@ -7,6 +7,7 @@ using Forum.Documents;
 using Forum.Helpers;
 using MongoDB.Driver.Builders;
 using MongoDB.Bson;
+using Forum.App_Code;
 
 namespace Forum.Services
 {
@@ -32,14 +33,13 @@ namespace Forum.Services
 
         public IEnumerable<PostDocument> GetPosts(ObjectId themeId, int pageIndex, int pageSize)
         {
-            //TODO: ask Bugi how to select Posts as mongoCursor to apply SetSkip&SetLimit methods
-            IEnumerable<PostDocument> test = _themes.FindOne(Query.EQ("_id", themeId)).Posts.OrderBy(p => p.Date).Skip(pageIndex * pageSize).Take(pageSize);
-            int selected = test.Count();
+            var theme = _themes
+                .FindAs<ThemeDocument>(Query.EQ("_id", themeId))
+                .SetLimit(1)
+                .SetFields(Fields.Include("_id").Slice("Posts", pageIndex*pageSize, pageSize))
+                .FirstOrDefault();
 
-            return _themes.FindOne(Query.EQ("_id", themeId)).Posts
-                .OrderBy(p => p.Date)
-                .Skip(pageIndex * pageSize)
-                .Take(pageSize);
+            return theme == null ? Enumerable.Empty<PostDocument>() : theme.Posts;
         }
 
         public void DeletePost(ObjectId themeId, ObjectId postId)
